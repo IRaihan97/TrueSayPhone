@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<!--page name-->
+		<title> True Say Phone - Contact US </title>
+		
+		<!--meta-tags-->
+		<meta charset="utf-8" />
+		
+		<!--specific page metatags-->
+		<meta name="description" content="Contact Us page of TSP where customers can find their stoer and submit comments.">
+		<meta name="keywords" content="Feedback, Address, Location, Phones, Smartphones">
+		<meta name="author" content="Raihan Islam">	
+		<!--stylesheet links-->
+		<link rel="stylesheet" type="text/css" href="layout.css" />
+		<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Lato" rel="stylesheet">
+		
+		<!--Import the javascript exclusively for the slideshow for the offers -->
+		<script type="text/javascript" src="feedback.js"></script>
+	</head>
+	
+<body>
+	<div class="body_con">
+		<div id="webpage_con">
+			<header>
+			<!-- This section of the code defines the header of the website -->
+				<div class="page_logo">
+					<img alt="Logo of the shop and website" src="Assignment1_Resources/Logo_created.png" /> <!-- This image represents the logo and is place on the left side of the page -->
+				</div>
+					<div class="header_text_con">
+					<!-- The text of the header that states the name of the website as well as the telephone number of the client -->
+						<h1 class="header_text1"> True Say Phone </h1>
+						<h1 class="header_text"> Tel. Number: 01895111234 </h1>
+					</div>
+			</header>
+			
+			<nav>
+				<!-- Navigation of the website. They are used to lead the user to the other pages of the website -->
+				<div id="nav_con">
+					<!-- A table is used to structure the navigation (combined with CSS) -->
+					<ul id="nav_ul">
+						<li class="nav_li">
+						<a class="nav_a" href="index.html"> <div class="li_text"> Home </div> </a>
+						</li>
+						
+						<li class="nav_li">
+						<a class="nav_a" href="apple_phones.html"> <div class="li_text"> Apple </div> </a>
+						</li>
+						
+						<li class="nav_li">
+						<a class="nav_a" href="samsung_phones.html"> <div class="li_text"> Samsung </div> </a>
+						</li>
+
+						<li class="nav_li">
+						<a class="nav_a" href="htc_phones.html"> <div class="li_text"> HTC </div> </a>
+						</li>
+						
+						<li class="nav_li">
+						<a class="nav_a" href="accessories.html"> <div class="li_text"> Accessories </div> </a>
+						</li>
+
+						<li class="nav_li">
+						<a class="nav_a" href="offers.html"> <div class="li_text"> Offers </div> </a>
+						</li>
+
+						<li class="nav_li">
+						<a class="nav_a" href="contact_us.html"> <div class="li_text"> Contact Us </div> </a>
+						</li>				
+					</ul>
+				</div>
+			</nav>
+			
+			<main>
+			<!-- Introduction to the webpage-->
+			<h2 class="h2_top"> Contact Us </h2>
+			<p class="top_text"> Welcome to the contact page of our shop and website </p>
+			<p class="top_text"> Here you will be able to contact us and find our local store </p>
+			<p class="top_text"> Please send as much feedback as you can! </p>
+			<p class="top_text"> So we can improve our sevice even more! </p>
+			
+			<!-- This is the container of the feedback form-->
+			<div class="contact_con">
+				<h2 class="h2_top"> Send us feedback trough this feedback form </h2>
+				<div class ="feedback_tbl">
+					
+					<!--actual feedback form-->
+					<form name = "cust" 
+						  method = "post"
+						  onsubmit = "return checkData()"
+						  action = "mailto:40052428@uxbridge.ac.uk">
+						<table>
+							<tr>
+								<td> <p> Name: </p> </td>
+								<td> <input name = "fname" type = "text" /> </td>
+							</tr>
+							
+							<tr>
+								<td> <p> Email: </p> </td>
+								<td> <input name = "email" type = "text" /> </td>
+							</tr>
+
+							<tr>
+								<td valign = "top"> <p> Comment: </p> </td>
+								<td> <textarea name = "message" rows = "5" col = "7"></textarea> </td>
+							</tr>
+							
+							<tr>
+								<td> <p> </p> </td>
+								<td align = "right"> <input type = "submit" value = "send" /> </td>
+							</tr>
+								
+						</table>
+						<br/>
+						
+					</form> <!--close feedback form -->
+
+				</div> <!--close feedback div-->
+			</div>
+			
+			<!--This is the container about the address and the map-->
+			<div class="contact_con">
+				<h2 class="h2_top"> Below You will find Our Address </h2>
+				<div class="address_con">
+					
+					<p class="text_address"> True Say Phone <br/> High Street <br/> Greater London <br/> UB8 1LA </br> Telephone Number: 01895111234 </p>
+					
+				</div>
+				
+				<div class="map_con">
+					<img alt="Google map image for store location" src="Assignment1_Resources/map.png" />
+				</div>
+				
+				
+			</div>
+			</main>
+	
+			<footer>
+		
+				<div class="copyright">	
+					<h4> &copy;TSP - Raihan Islam </h4>
+				</div>		
+
+				<div class="social_con">
+					<a title="Go to our Facebook page" href="https://en-gb.facebook.com/">	
+						<img alt="Facebook Icon" src="Assignment1_Resources/facebook.bmp" /> 
+					</a>
+			
+					<a title="Go to our Twitter page" href="https://twitter.com/?lang=en">
+						<img alt="Twitter Icon" src="Assignment1_Resources/twitter.bmp" />
+					</a>
+			
+					<a title="Go to our Snapchat page" href="https://www.snapchat.com/">
+						<img alt="Snapchat Icon" src="Assignment1_Resources/snapchat.bmp"/>
+					</a>
+				</div>
+				
+			</footer>
+		</div>	
+	</div>
+
+
+</body>
+</html>
